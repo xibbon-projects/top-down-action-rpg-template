@@ -3,6 +3,8 @@
 *.png~
 *.jpg~
 
+# Godot 4+ specific ignores
+.godot/editor/
 
 # Godot-specific ignores
 .import/
@@ -12,3 +14,6 @@ export_presets.cfg
 # Mono-specific ignores
 .mono/
 build/
+
+# Mac-specific ignores
+**/.DS_Store
