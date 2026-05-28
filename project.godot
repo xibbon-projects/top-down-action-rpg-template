@@ -8,12 +8,16 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Top Down Action RPG"
 run/main_scene="res://scenes/levels/Intro.tscn"
 config/use_custom_user_dir=true
-config/features=PackedStringArray("4.4")
+config/features=PackedStringArray("4.6")
 config/icon="res://icon.png"
 
 [autoload]
@@ -31,7 +35,6 @@ gdscript/warnings/return_value_discarded=false
 [display]
 
 window/stretch/mode="viewport"
-window/stretch/scale_mode="fractional"
 
 [input]
 
@@ -90,6 +93,7 @@ pause={
 
 [rendering]
 
+renderer/rendering_method="forward_plus"
 textures/vram_compression/import_s3tc_bptc=true
 textures/vram_compression/import_etc2_astc=true
 environment/defaults/default_environment="res://default_env.tres"
@@ -98,3 +102,4 @@ environment/defaults/default_environment="res://default_env.tres"
 
 project/editorState=[]
 project/breakpoints={}
+project/disabled_breakpoints={}
